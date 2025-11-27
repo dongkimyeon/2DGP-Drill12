@@ -191,7 +191,7 @@ class Zombie:
         a3 = Action('랜덤 위치 설정', self.set_random_location)
         a2 = Action('목표 지점으로 이동', self.move_to)
         wander = Sequence('배회', a3, a2)
-
+        #제출
         c1 = Condition('소년이 근처에 있는가?', self.if_boy_nearby, 7)
         a4 = Action('소년 추적', self.move_to_boy)
         chase = Sequence('소년 추적', c1, a4)
